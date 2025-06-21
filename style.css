@@ -1,0 +1,157 @@
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body::before,
+body::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  border-radius: 50%;
+  filter: blur(120px); 
+  opacity: 1;
+}
+
+/* Bottom-left purple glow */
+body::before {
+  width: 200px;
+  height: 100px;
+  background: radial-gradient(circle, #7c02d3);
+  bottom: 0;
+  left: 0;
+}
+
+/* Top-right purple glow */
+body::after {
+  width: 150px;
+  height: 300px;
+  background: radial-gradient(circle, #7c02d3 );
+  top: 0;
+  right: 0;
+}
+
+body{
+  position: relative;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0d0d0d;
+  color: #fff;
+  line-height: 1.6;
+  padding: 0 2rem;
+}
+
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 0;
+}
+
+.logo{
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.logo .highlight{
+  color: #9b5de5;;
+}
+
+.navlinks a{
+  margin: 0 1rem;
+  text-decoration: none;
+  color: #ccc;
+  transition: color 0.3s ease;
+}
+
+.navlinks a:hover{
+  color: #6A0DAD;
+}
+
+.nav-buttons .btn{
+  margin-left: 0.5rem;
+} 
+
+.hero{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem o;
+  flex-wrap: nowrap;
+  margin-top: 1.5rem;
+
+}
+
+.hero-content{
+  max-width: 600px;
+}
+
+.hero-content .highlight{
+  color: #6A0DAD;
+}
+
+.hero h1{
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+}
+
+.hero p{
+  margin-bottom: 2rem;
+  color: #ccc;
+}
+
+.hero-buttons{
+  margin-right: 1rem;
+}
+
+button{
+  padding: 0.75rem 1.5rem;
+  cursor: pointer;
+  border-radius: 15px;
+  border: none;
+  font-weight: 600;
+}
+
+.btn-secondary{
+  background-color: #6A0DAD;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.btn-primary{
+  background-color:#0d0d0d;
+  margin-right: 1rem;
+  color: #fff;
+}
+
+.hero-primary {
+  background-color: #6A0DAD;
+  color: white;
+  margin-right: 1.5rem;
+}
+.hero-secondary{
+  background-color: #0d0d0d;
+  color: #fff;
+  border: 1px solid #fff;
+}
+/* Mobile Responsiveness */
+@media screen and (max-width:767px) {
+  
+.chat-container{
+  background-color: blue;
+  
+}
+
+}
+
+/* Tablet Responsiveness */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+  
+.chat-container{
+  background-color: green;
+  
+}
+
+}

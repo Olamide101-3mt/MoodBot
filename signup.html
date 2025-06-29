@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+  <main class="container">
+    <div class="logo">
+      <img src="Group 5.png" alt="">
+    </div>
+    <h2>Create an Account</h2>
+    <p>Start yourjourney to better mental wellness today</p>
+
+    <form action="" id="login-form">
+      <label for="email">Email</label> 
+      <input type="email" id="email" placeholder="Enter your email" required autocomplete="username">
+
+      <label for="password">Password> </label>
+        <div class="password-wrapper"></div>
+          <input 
+          type="password" 
+          id="password" 
+          placeholder="Enter your password"
+          required autocomplete="current-password" />
+          <button type="button" id="toggle-password" class="toggle-password" aria-label="show password">
+             &#128065; <!--eye unicode icon-->
+          </button>
+        </div>
+        <div class="forgot-password">
+          <input type="checkbox" name="license" id="license" required/><span>I agree to the <span class="purple"> 
+            Terms of use</span> and <span class="purple">privacy</span></span>
+        </div>
+        <button type="submit" class="login-button">Sign up</button>
+    </form>
+    <p class="new-here">
+      Already have an account? <a href="login.html">Login here</a>
+    </p>
+    <div class="divider-wrapper">
+      <hr />
+      <span>OR</span>
+      <hr />
+    </div>
+    <div class="social-buttons">
+      <button class="social-button" aria-label="Sign in with Google">
+        <img  src="devicon_google.png"
+          alt=""
+          aria-hidden="true" 
+        />
+      </button>
+      <button class="social-button" aria-label="Sign in with Facebook">
+        <img src="logos_facebook.png"
+          alt=""
+          aria-hidden="true"
+        />
+      </button>
+    </div>
+  </main>
+</body>
+</html>

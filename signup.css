@@ -32,20 +32,33 @@ body::after {
 }
 
 body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
   position: relative;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #0d0d0d;
 }
 
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+
 .logo{
   margin-top: 82px;
-  margin-left: 500px;
+  /* margin-left: 500px; */
 }
 
 h2{
   margin-top: 50px;
   color: #6A0DAD;
-  margin-left: 500px;
+  /* margin-left: 500px; */
   font-weight: 700;
   line-height: 26px;
   font-size: 32px;
@@ -54,7 +67,7 @@ h2{
 
 p{
   margin-top: 18px;
-  margin-left: 450px;
+  /* margin-left: 450px; */
   color: #fff;
   line-height: 26px;
   margin-bottom: 1rem;
@@ -68,13 +81,12 @@ label{
   margin-bottom: 0.25rem;
   text-align: left;
   font-weight: 500;
-  margin-left: 500px;
+  margin-left: 20px; 
   color: #fff;
 
 }
 
 input[type = "email"],
-input[type = "password"],
 input[type = "text"],
 input[type = "checkbox"] {
   padding: 12px 16px 12px 16px;
@@ -83,11 +95,24 @@ input[type = "checkbox"] {
   border-radius: 6px;
   color: #fff;
   gap: 10px;
-  margin-left: 496px;
+  margin-left: 20px;
   font-size: 1rem;
   transition: red 0.3s ease;
   margin-bottom: 12px;
+  
 
+}
+input[type = "password"] {
+  margin-bottom: 0px;
+  padding: 12px 16px 12px 16px;
+  background: transparent;
+  border: 1px solid #D3D3D3;
+  border-radius: 6px;
+  color: #fff;
+  gap: 10px;
+  margin-left: 20px; 
+  font-size: 1rem;
+  transition: red 0.3s ease;
 }
 
 input[type = "checkbox"] {
@@ -140,16 +165,17 @@ input:focus{
   width: 320px;
   background-color: #6A0DAD;
   border-radius: 16px;
-  margin-left: 450px;
-  margin-top: 40px;
-  margin-bottom: 20px;
+  /* margin-left: 450px; */
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 .new-here{
-  margin-top: 1rem;
+  margin-top: 0.25rem;
   margin-bottom: 1.5rem;
   font-size: 0.85rem;
   color: #aaa;
+  text-align: start;
 }
 
 .divider-wrapper{

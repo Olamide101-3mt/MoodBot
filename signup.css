@@ -102,6 +102,20 @@ input[type = "checkbox"] {
   
 
 }
+
+input[type = "text"]{
+   padding: 12px 16px 12px 16px;
+  background: transparent;
+  border: 1px solid #D3D3D3;
+  border-radius: 6px;
+  color: #fff;
+  gap: 10px;
+  margin-left: 20px;
+  font-size: 1rem;
+  transition: red 0.3s ease;
+  margin-bottom: 12px;
+  width: 95%;
+}
 input[type = "password"] {
   margin-bottom: 0px;
   padding: 12px 16px 12px 16px;
@@ -113,12 +127,14 @@ input[type = "password"] {
   margin-left: 20px; 
   font-size: 1rem;
   transition: red 0.3s ease;
+  width: 95%;
 }
 
-input[type = "checkbox"] {
+#license {
   background: #0d0d0d;
   color: #0d0d0d;
   border: 100px solid #6A0DAD;
+  margin-left: 20px;
 }
 
 input::placeholder{
@@ -158,6 +174,11 @@ input:focus{
 
 .purple{
   color: #6A0DAD;
+  
+}
+
+.space{
+  margin-left: 8px;
 }
 
 .login-button{
@@ -165,17 +186,24 @@ input:focus{
   width: 320px;
   background-color: #6A0DAD;
   border-radius: 16px;
-  /* margin-left: 450px; */
+  margin-left: 20px;
   margin-top: 20px;
   margin-bottom: 10px;
+  color: #fff;
 }
 
 .new-here{
+  display: flex;
+
   margin-top: 0.25rem;
   margin-bottom: 1.5rem;
   font-size: 0.85rem;
   color: #aaa;
-  text-align: start;
+  text-align: left;
+}
+
+.log-space{
+  margin-left: 5px;
 }
 
 .divider-wrapper{

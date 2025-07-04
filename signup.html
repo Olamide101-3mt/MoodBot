@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login</title>
+  <title>Sign up</title>
   <link rel="stylesheet" href="signup.css">
+  <link rel="icon" type="image/png" sizes="32 x 32" href="Group 5.png">
 </head>
 <body>
   <main class="container">
@@ -12,31 +13,34 @@
       <img src="Group 5.png" alt="">
     </div>
     <h2>Create an Account</h2>
-    <p>Start yourjourney to better mental wellness today</p>
+    <p>Start your journey to better mental wellness today</p>
 
-    <form action="" id="login-form">
+    <form action="" id="signup-form" autocomplete="off">
       <label for="email">Email</label> 
-      <input type="email" id="email" placeholder="Enter your email" required autocomplete="username">
+      <input type="text" name="identifier" id="identifier" placeholder="Email or Username" required />
 
       <label for="password">Password </label>
         <div class="password-wrapper">
           <input 
           type="password" 
+          name="password"
           id="password" 
-          placeholder="Create password"
+          placeholder="Create a password"
+          minlength="8"
+          maxlength="75"
           required autocomplete="current-password" />
-          <button type="button" id="toggle-password" class="toggle-password" aria-label="show password">
-             &#128065; <!--eye unicode icon-->
-          </button>
+          <!-- <button type="button" id="toggle-password" class="toggle-password" aria-label="show password">
+             &#128065; eye unicode icon
+          </button> -->
         </div>
         <div class="forgot-password">
-          <input type="checkbox" name="license" id="license" required/><span>I agree to the <span class="purple"> 
+          <input type="checkbox" name="license" id="license" required/><span class="space">I agree to the <span class="purple"> 
             Terms of use</span> and <span class="purple">privacy</span></span>
         </div>
         <button type="submit" class="login-button">Sign up</button>
     </form>
     <p class="new-here">
-      Already have an account? <a href="login.html">Login here</a>
+      Already have an account? <a href="login.html" class="log-space">Log in here</a>
     </p>
     <!-- <div class="divider-wrapper">
       <hr />
@@ -58,5 +62,7 @@
       </button>
     </div> -->
   </main>
+
+  <script src="signup.js"></script>
 </body>
 </html>

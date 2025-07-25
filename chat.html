@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="chat.css">
+  <link rel="icon" type="img/png" sizes="32 x 32" href="Group 5.png">
+  <title>Let's Chat</title>
+
+</head>
+<body>
+  <header class="nav-bar">
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Logout</a>
+    </nav>
+  </header>
+  
+  <div class="chat-container">
+    <aside class="side-bar">
+      <h3>Chat History</h3>
+      <ul class="chat-history" id="chat-history">
+        <li>Welcome Chat</li>
+        <li>Weekly Mood Check</li>
+      </ul>
+    </aside>
+  
+
+    <main class="chat-panel">
+      <div>
+        <img src="Group 5.png" alt="">
+        <h1>Hi there, Ready to talk?</h1>
+        <h4>I'm MoodBot ready to listen and support you. <br>Everything you say is private, and you can stay <br>anonymous. </h4>
+      </div>
+      <div class="messages" id="messages"></div>
+      <form action="" class="chat-input" id="chat-form">
+        <input type="text" id="user-input" placeholder="Type a message....." required>
+        <button type="submit" aria-label="Send">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M2 21l21-9L2 3v7l15 2-15 2v7z"/>
+          </svg>
+        </button>
+      </form>
+    </main>
+    
+  </div> 
+
+  <script src="chat.js"></script>
+</body>
+</html>

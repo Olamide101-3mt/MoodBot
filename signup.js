@@ -24,7 +24,7 @@ form.addEventListener('submit', async (e) => {
       headers: {'Content-Type': 'application/json' },
       body : JSON.stringify(payload) 
     });
-
+    
     if (res.ok) {
       alert('Registration successful! Please verify your email, then log in.');
       window.location.href = 'chat.html';

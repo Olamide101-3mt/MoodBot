@@ -19,9 +19,11 @@ form.addEventListener('submit', async (e) => {
   };
 
   try {
-    const res = await fetch ('/api/v1/moodbot/auth/register', {
+    const res = await fetch ('https://moodbot-api.onrender.com/api/v1/moodbot/auth/register', {
       method : 'POST',
-      headers: {'Content-Type': 'application/json' },
+      headers: {'Content-Type': 'application/json', 
+                'Accept': 'application/json'
+      },
       body : JSON.stringify(payload) 
     });
     

@@ -15,30 +15,44 @@
     <h2>Create an Account</h2>
     <p>Start your journey to better mental wellness today</p>
 
-    <form action="" id="signup-form" autocomplete="off">
-      <label for="email">Email</label> 
-      <input type="text" name="identifier" id="identifier" placeholder="Email or Username" required />
+   <form id="signup-form" autocomplete="off">
+  <label for="name">Full Name</label>
+  <input type="text" name="name" id="name" placeholder="Enter your name" required />
 
-      <label for="password">Password </label>
-        <div class="password-wrapper">
-          <input 
-          type="password" 
-          name="password"
-          id="password" 
-          placeholder="Create a password"
-          minlength="8"
-          maxlength="75"
-          required autocomplete="current-password" />
-          <!-- <button type="button" id="toggle-password" class="toggle-password" aria-label="show password">
-             &#128065; eye unicode icon
-          </button> -->
-        </div>
-        <div class="forgot-password">
-          <input type="checkbox" name="license" id="license" required/><span class="space">I agree to the <span class="purple"> 
-            Terms of use</span> and <span class="purple">privacy</span></span>
-        </div>
-        <button type="submit" class="login-button">Sign up</button>
-    </form>
+  <label for="email">Email</label>
+  <input type="email" name="email" id="email" placeholder="Enter your email" required />
+
+  <label for="password">Password</label>
+  <input
+    type="password"
+    name="password"
+    id="password"
+    placeholder="Create a password"
+    minlength="8"
+    required
+  />
+
+  <label for="confirmPassword">Confirm Password</label>
+  <input
+    type="password"
+    name="confirmPassword"
+    id="confirmPassword"
+    placeholder="Confirm your password"
+    minlength="8"
+    required
+  />
+
+  <div class="forgot-password">
+    <input type="checkbox" name="license" id="license" required />
+    <span class="space">
+      I agree to the <span class="purple">Terms of Use</span> and
+      <span class="purple">Privacy</span>
+    </span>
+  </div>
+
+  <button type="submit" class="login-button">Sign Up</button>
+</form>
+
     <p class="new-here">
       Already have an account? <a href="login.html" class="log-space">Log in here</a>
     </p>

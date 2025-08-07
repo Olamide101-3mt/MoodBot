@@ -29,7 +29,7 @@ form.addEventListener('submit', async (e) => {
       // Optionally save tokens
       localStorage.setItem('accessToken', data.accessToken);
       localStorage.setItem('refreshToken', data.refreshToken);
-      window.location.href = 'login.html';
+      window.location.href = 'chat.html';
     } else {
       const error = await res.json();
       alert(error.message || 'OTP verification failed.');

@@ -5,7 +5,7 @@ form.addEventListener('submit', async (e) => {
   e.preventDefault();
   submit.disabled = true;
 
-  const name = form.name.value.trim();
+  const username = form.name.value.trim();
   const email = form.email.value.trim();
   const password = form.password.value.trim();
   const confirmPassword = form.confirmPassword.value.trim();
@@ -17,7 +17,7 @@ form.addEventListener('submit', async (e) => {
   }
 
   const payload = {
-    name,
+    username,
     email,
     password
   };

@@ -15,7 +15,7 @@ const password = form.password.value.trim();
 
 //Build the request
 try{
-  const res = await fetch ('/api/v1/moodbot/auth/login', {
+  const res = await fetch ('https://moodbot-api.onrender.com/api/v1/moodbot/auth/login', {
     method : 'POST',
     headers : {'Content-Type': 'application/json'},
     body : JSON.stringify({ identifier, password})

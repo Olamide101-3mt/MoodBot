@@ -44,7 +44,7 @@ body{
 
 .navbar{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   padding: 1.5rem 0;
 }
@@ -140,10 +140,12 @@ button{
 /* Mobile Responsiveness */
 @media screen and (max-width:767px) {
   
-.chat-container{
-  background-color: blue;
+  .hero{
+    flex-direction: column;
+
+  }
+
   
-}
 
 }
 

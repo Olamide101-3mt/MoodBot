@@ -100,10 +100,12 @@ input[type = "checkbox"] {
   transition: red 0.3s ease;
   margin-bottom: 12px;
   
+  
 
 }
 
-input[type = "text"]{
+input[type = "text"],
+input[type = "email"] {
    padding: 12px 16px 12px 16px;
   background: transparent;
   border: 1px solid #D3D3D3;
@@ -247,4 +249,9 @@ input:focus{
       width: 116px;
       height: 34px;
       gap: 10px;
+ }
+
+ label{
+  margin-bottom: 10px;
+  margin-top: 10px;
  }

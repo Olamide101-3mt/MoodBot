@@ -140,7 +140,7 @@ h4{
   padding: 0.75rem 1rem;
   border-radius: 1rem;
   border: none;
-  height: 30%;
+  height: 50%;
   background-color: #000;
   border: 1px solid #7c02d3;
 }
@@ -149,7 +149,7 @@ h4{
       position: absolute;
       right: 0.5rem;
       top: 50%;
-      transform: translateY(-350%);
+      transform: translateY(-150%);
       margin-right: 20px;
       background-color: transparent;
       border: none;
